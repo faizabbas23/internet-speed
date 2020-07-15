@@ -1,0 +1,15 @@
+import speedtest
+st = speedtest.Speedtest()
+while True:
+    
+    result=st.download()
+    x = result/1024/1024
+    #return(x) incase you want to rewrite this into a funtion
+    print(x)
+
+while True:
+    print(st.upload)
+    result=st.upload()
+    x = result/1024/1024
+    #return(y)
+    print(y)
